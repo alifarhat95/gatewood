@@ -32,30 +32,31 @@ import java.util.Scanner;
       System.out.println("");
       System.out.println("");
       
-      //Player writes in 1, 2, 3 for thier class
+      //Player writes in 1, 2, 3 for their class
       int pick = input.nextInt(); 
       int playerhealth = 0; //Will be the subclass hp of whatever hero class
       int enemyhealth = 0; // Will be changed to include different types of subclass health
-      
+      Player warrior = new Player();
+ 	  warrior.warriorclass();
       //loads the pick class
       
       //load the warriorhp from subclass Player
       if (pick == 1) {
-         playerhealth = get.warriorhp;
+         playerhealth = warrior.warriorhp;
          System.out.println("You feel the power of the warrior class flowing inside!");
          System.out.println("You loaded up with 1000 Health!");
          }
       //load the archerhp from subclass Player
       if (pick == 2) {
-         playerhealth = get.archerhp;
+         playerhealth = archerhp;
          System.out.println("You feel the power of the archer class flowing inside!");
-         System.out.println("You loaded up with 1500 health!");
+         System.out.println("You loaded up with 1200 health!");
          }
       //load the magehp from subclass Player
       if (pick == 3) {
-         playerhealth = get.magehp;
+         playerhealth = magehp;
          System.out.println("You feel the power of the mage class flowing inside!");
-         System.out.println("You loaded up with 2000 health!");
+         System.out.println("You loaded up with 900 health!");
          }
       }
       
