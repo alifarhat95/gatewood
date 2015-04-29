@@ -1,9 +1,9 @@
 import java.util.Scanner;
    public class Gatewood {
-      public static void main (String [] args) {hello
+      public static void main (String [] args)
       
       Scanner input = new Scanner (System.in);
-   
+      //This is the start of the story text base, note: include to use time interval 
       System.out.println("NARRARTOR: Welcome to the wonderful town of Gatewood!");
       System.out.println("NARRARTOR: Where the only town in the USA is far from society.");
       System.out.println("");
@@ -32,4 +32,5 @@ import java.util.Scanner;
       System.out.println("");
       System.out.println("");
       
+      //Player writes in 1, 2, 3 for thier class
       int pick = input.nextInt(); 
