@@ -1,0 +1,22 @@
+
+public class Player {
+	int warriorhp;
+		
+		public void warriorclass(){
+		warriorhp = 1000;
+		
+		
+		}
+		public void archerclass( ){
+		int archerhp = 1200;
+		
+		
+		}
+		public void mageclass( ){
+		int magehp = 900;
+		
+		
+
+	}
+
+}
