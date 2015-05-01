@@ -35,10 +35,25 @@ import java.util.Scanner;
       //Player writes in 1, 2, 3 for their class
       int pick = input.nextInt(); 
       int playerhealth = 0; //Will be the subclass hp of whatever hero class
-      int enemyhealth = 0; // Will be changed to include different types of subclass health\
+      int demonhealth = 0; // Will be changed to include different types of subclass health\
+      int zombiehealth = 0;
+      int cyborghealth = 0;
+      int voidhealth = 0;
       int attack1 = 0;
       int attack2 = 0;
       int attack3 = 0;
+      String attack1name;
+      String attack2name;
+      String attack3name;
+      String slashn = "Slash";
+  	  String lungen = "Lunge";
+  	  String decimaten = "Decimate";
+  	  String shotn = "Arrow Shot";
+      String bleedn = "Bleeding Shot";
+      String snipen =  "Sniping Shot";
+      String firen = "Fireball";
+      String watern = "Waterball";
+      String earthn= "Earthball";
       Player hero = new Player();
  	  hero.playerclass();
       //loads the pick class
@@ -49,6 +64,9 @@ import java.util.Scanner;
          attack1 = hero.slash;
          attack2 = hero.lunge;
          attack3 = hero.decimate;
+         attack1name = slashn;
+         attack2name = lungen;
+         attack3name = decimaten;
          System.out.println("You feel the power of the warrior class flowing inside!");
          System.out.println("You loaded up with 1000 Health!");
          }
@@ -58,6 +76,9 @@ import java.util.Scanner;
          attack1 = hero.shot;
          attack2 = hero.bleed;
          attack3 = hero.snipe;
+         attack1name = shotn;
+         attack2name = bleedn;
+         attack3name = snipen;
          System.out.println("You feel the power of the archer class flowing inside!");
          System.out.println("You loaded up with 1200 health!");
          }
@@ -67,8 +88,12 @@ import java.util.Scanner;
          attack1 = hero.fire;
          attack2 = hero.water;
          attack3 = hero.earth;
+         attack1name = firen;
+         attack2name = watern;
+         attack3name = earthn;
          System.out.println("You feel the power of the mage class flowing inside!");
          System.out.println("You loaded up with 900 health!");
          }
       }
    }
+       
