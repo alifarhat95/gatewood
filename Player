@@ -3,22 +3,33 @@ public class Player {
 	int warriorhp;
 	int archerhp;
 	int magehp;
-	int slash;	
-		public void warriorclass(){
+	int slash;
+	int lunge;
+	int decimate;
+	int fire;
+	int water;
+	int earth;
+	int shot;
+	int bleed;
+	int snipe;
+	
+		public void playerclass(){
 		warriorhp = 1000;
 		slash = 50;
+		lunge = 70;
+		decimate = 100;
 		
+		magehp = 900;
+		fire = 100;
+		water = 50;
+		earth = 80;
+		
+		
+		archerhp = 1200;
+		shot = 50;
+		bleed = 70;
+		snipe = 100;
 		}
-		public void archerclass( ){
-		int archerhp = 1200;
-		
-		
-		}
-		public void mageclass( ){
-		int magehp = 900;
-		
 		
 
 	}
-
-}
