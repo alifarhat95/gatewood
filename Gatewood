@@ -1,6 +1,6 @@
 import java.util.Scanner;
    public class Gatewood {
-      public static void main (String [] args)
+      public static void main (String [] args) {
       
       Scanner input = new Scanner (System.in);
       //This is the start of the story text base, note: include to use time interval 
@@ -38,7 +38,11 @@ import java.util.Scanner;
       int enemyhealth = 0; // Will be changed to include different types of subclass health\
       int warriorslash = 0;
       Player warrior = new Player();
+      Player archer = new Player();
+      Player mage = new Player();
  	  warrior.warriorclass();
+ 	  archer.archerclass();
+ 	  mage.mageclass();
       //loads the pick class
       
       //load the warriorhp from subclass Player
@@ -50,15 +54,15 @@ import java.util.Scanner;
          }
       //load the archerhp from subclass Player
       if (pick == 2) {
-         playerhealth = archerhp;
+         playerhealth = archer.archerhp;
          System.out.println("You feel the power of the archer class flowing inside!");
          System.out.println("You loaded up with 1200 health!");
          }
       //load the magehp from subclass Player
       if (pick == 3) {
-         playerhealth = magehp;
+         playerhealth = mage.magehp;
          System.out.println("You feel the power of the mage class flowing inside!");
          System.out.println("You loaded up with 900 health!");
          }
       }
-      
+   }
