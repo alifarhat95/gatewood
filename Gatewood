@@ -35,7 +35,7 @@ import java.util.Scanner;
       //Player writes in 1, 2, 3 for their class
       int pick = input.nextInt(); 
       int playerhealth = 0; //Will be the subclass hp of whatever hero class
-      int demonhealth = 0; // Will be changed to include different types of subclass health\
+      int demonhealth = 10; // Will be changed to include different types of subclass health\
       int zombiehealth = 0;
       int cyborghealth = 0;
       int voidhealth = 0;
@@ -94,6 +94,42 @@ import java.util.Scanner;
          System.out.println("You feel the power of the mage class flowing inside!");
          System.out.println("You loaded up with 900 health!");
          }
+      while (demonhealth > 0) { 
+          {
+
+             System.out.println("Time for your move!!");
+             System.out.println("");
+             System.out.println("Your skills:");
+             System.out.println("");
+             System.out.println("1 - Stab: Thrust your sword!");
+             System.out.println("2 - Flurry: Strike multiple times!");
+             System.out.println("3 - Gash: Bleed your foe!");
+             System.out.println("");
+             System.out.println("What skill do you use? ");
+             System.out.println("");
+             
+             int choice = input.nextInt();
+             if (choice == 1) {
+                 System.out.println("You have attacked the enemy with your weapon, it dealt " + attack1 + " damage!");
+                 demonhealth = demonhealth - attack1;
+                 System.out.println("You have " + playerhealth + " health and Clad has " + demonhealth + "!");
+                 System.out.println("");
+              }
+        
+              if (choice == 2) {
+                 System.out.println("You have attacked the enemy with your weapon, it dealt " + attack2 + " damage!");
+                 demonhealth = demonhealth - attack2;
+                 System.out.println("You have " + playerhealth + " health and Clad has " + demonhealth + "!");
+                 System.out.println("");
+              }
+        
+              if (choice == 3) {
+                 System.out.println("You have attacked the enemy with your weapon, it dealt " + attack3 + " damage!");
+                 demonhealth = demonhealth - attack3;
+                 System.out.println("You have " + playerhealth + " health and Clad has " + demonhealth + "!");
+                 System.out.println("");
+              }
+           }
       }
-   }
-       
+      }
+}
