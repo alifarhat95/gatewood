@@ -1,6 +1,8 @@
 
 public class Player {
 	int warriorhp;
+	int archerhp;
+	int magehp;
 	int slash;	
 		public void warriorclass(){
 		warriorhp = 1000;
