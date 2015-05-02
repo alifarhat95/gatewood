@@ -15,21 +15,21 @@ public class Player {
 	
 		public void playerclass(){
 		warriorhp = 1000;
-		slash = 50;
-		lunge = 70;
-		decimate = 100;
+		slash =  (int) (Math.random() * 100)+1;
+		lunge =  (int) (Math.random() * 100)+1;
+		decimate =  (int) (Math.random() * 100)+1;
 		
 		magehp = 900;
-		fire = 100;
-		water = 50;
-		earth = 80;
-		
+		fire =  (int) (Math.random() * 100)+1;
+		water =  (int) (Math.random() * 100)+1;
+		earth =  (int) (Math.random() * 100)+1;
 		
 		archerhp = 1200;
-		shot = 50;
-		bleed = 70;
-		snipe = 100;
+		shot =  (int) (Math.random() * 100)+1;
+		bleed =  (int) (Math.random() * 100)+1;
+		snipe =  (int) (Math.random() * 100)+1;
 		}
 		
 
 	}
+
