@@ -174,10 +174,11 @@ public class Gatewood {
 					playerhealth = playerhealth - eattack3;
 					System.out.println("You have " + playerhealth + " health and Clad has " + demonhealth + " health!");
 					System.out.println("");
-				if (demonhealth > 0) break; {
-					}
-				if (playerhealth > 0) {
 				}
+	            if (playerhealth <= 0) {
+
+	            if (demonhealth <= 0) {
+
 				while (zombiehealth > 0) {
 					}
 					System.out.println("Time for your move!!");
@@ -383,4 +384,5 @@ public class Gatewood {
 			}
 		}
 	}
+}
 }
