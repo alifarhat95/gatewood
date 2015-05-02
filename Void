@@ -1,0 +1,17 @@
+
+public class Void {
+	int voidhp;
+	int voidwarp;
+	int voidshred;
+	int voidsmash;
+	
+		public void voidclass(){
+		voidhp = 200;
+		voidwarp =  (int) (Math.random() * 100)+1;
+		voidshred =  (int) (Math.random() * 100)+1;
+		voidsmash =  (int) (Math.random() * 100)+1;
+		}
+		
+
+	}
+
