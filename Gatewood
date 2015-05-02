@@ -128,21 +128,21 @@ public class Gatewood {
 				if (choice == 1) {
 					System.out.println("You have attacked the enemy with your weapon, it dealt " + attack1 + " damage!");
 					demonhealth = demonhealth - attack1;
-					System.out.println("You have " + playerhealth + " health and Clad has " + demonhealth + "!");
+					System.out.println("You have " + playerhealth + " health and Demon Dan has " + demonhealth + "!");
 					System.out.println("");
 				}
 
 				if (choice == 2) {
 					System.out.println("You have attacked the enemy with your weapon, it dealt " + attack2 + " damage!");
 					demonhealth = demonhealth - attack2;
-					System.out.println("You have " + playerhealth + " health and Clad has " + demonhealth + "!");
+					System.out.println("You have " + playerhealth + " health and Demon Dan has " + demonhealth + "!");
 					System.out.println("");
 				}
 
 				if (choice == 3) {
 					System.out.println("You have attacked the enemy with your weapon, it dealt " + attack3 + " damage!");
 					demonhealth = demonhealth - attack3;
-					System.out.println("You have " + playerhealth + " health and Clad has " + demonhealth + "!");
+					System.out.println("You have " + playerhealth + " health and Demon Dan has " + demonhealth + "!");
 					System.out.println("");
 				}
 			}
@@ -152,27 +152,27 @@ public class Gatewood {
 
 				if (demonattk == 1) {
 					eattack1 = (int) (Math.random() * 100)+1;
-					System.out.println("Clad dashed towards you and slashed you! You have been dealt " + eattack1 + " damage!");
+					System.out.println("Demon Dan dashed towards you and slashed you! You have been dealt " + eattack1 + " damage!");
 					playerhealth = playerhealth - eattack1;
-					System.out.println("You have " + playerhealth + " health and Clad has " + demonhealth + " health!");
+					System.out.println("You have " + playerhealth + " health and Demon Dan has " + demonhealth + " health!");
 					System.out.println("");
 
 				}
 
 				if (demonattk == 2) {
 					eattack2 = (int) (Math.random() * 100)+1;
-					System.out.println("Clad shattered the floor under your feet! You were dealt " + eattack2 + " damage!");
+					System.out.println("Demon Dan shattered the floor under your feet! You were dealt " + eattack2 + " damage!");
 					playerhealth = playerhealth - eattack2;
-					System.out.println("You have " + playerhealth + " health and Clad has " + demonhealth + " health!");
+					System.out.println("You have " + playerhealth + " health and Demon Dan has " + demonhealth + " health!");
 					System.out.println("");
 
 				}
 
 				if (demonattk == 3) {
 					eattack3 = (int) (Math.random() * 100)+1;
-					System.out.println("Clad siphoned blood from your your flesh! It dealt " + eattack3 + " damage!");
+					System.out.println("Demon Dan siphoned blood from your your flesh! It dealt " + eattack3 + " damage!");
 					playerhealth = playerhealth - eattack3;
-					System.out.println("You have " + playerhealth + " health and Clad has " + demonhealth + " health!");
+					System.out.println("You have " + playerhealth + " health and Demon Dan has " + demonhealth + " health!");
 					System.out.println("");
 				}
 				if (demonhealth <= 0) {
@@ -194,21 +194,21 @@ public class Gatewood {
 					if (choice == 1) {
 						System.out.println("You have attacked the enemy with your weapon, it dealt " + attack1 + " damage!");
 						zombiehealth = zombiehealth - attack1;
-						System.out.println("You have " + playerhealth + " health and Clad has " + zombiehealth + "!");
+						System.out.println("You have " + playerhealth + " health and Zombie Zak has " + zombiehealth + "!");
 						System.out.println("");
 					}
 
 					if (choice == 2) {
 						System.out.println("You have attacked the enemy with your weapon, it dealt " + attack2 + " damage!");
 						zombiehealth = zombiehealth - attack2;
-						System.out.println("You have " + playerhealth + " health and Clad has " + zombiehealth + "!");
+						System.out.println("You have " + playerhealth + " health and Zombie Zak has " + zombiehealth + "!");
 						System.out.println("");
 					}
 
 					if (choice == 3) {
 						System.out.println("You have attacked the enemy with your weapon, it dealt " + attack3 + " damage!");
 						zombiehealth = zombiehealth - attack3;
-						System.out.println("You have " + playerhealth + " health and Clad has " + zombiehealth + "!");
+						System.out.println("You have " + playerhealth + " health and Zombie Zak has " + zombiehealth + "!");
 						System.out.println("");
 					}
 				}
@@ -218,27 +218,27 @@ public class Gatewood {
 
 					if (zombieattk == 1) {
 						eattack1 = (int) (Math.random() * 100)+1;
-						System.out.println("Clad dashed towards you and slashed you! You have been dealt " + eattack1 + " damage!");
+						System.out.println("Zombie Zak dashed towards you and slashed you! You have been dealt " + eattack1 + " damage!");
 						playerhealth = playerhealth - eattack1;
-						System.out.println("You have " + playerhealth + " health and Clad has " + zombiehealth + " health!");
+						System.out.println("You have " + playerhealth + " health and Zombie Zak has " + zombiehealth + " health!");
 						System.out.println("");
 
 					}
 
 					if (zombieattk == 2) {
 						eattack2 = (int) (Math.random() * 100)+1;
-						System.out.println("Clad shattered the floor under your feet! You were dealt " + eattack2 + " damage!");
+						System.out.println("Zombie Zak shattered the floor under your feet! You were dealt " + eattack2 + " damage!");
 						playerhealth = playerhealth - eattack2;
-						System.out.println("You have " + playerhealth + " health and Clad has " + zombiehealth + " health!");
+						System.out.println("You have " + playerhealth + " health and Zombie Zak has " + zombiehealth + " health!");
 						System.out.println("");
 
 					}
 
 					if (zombieattk == 3) {
 						eattack3 = (int) (Math.random() * 100)+1;
-						System.out.println("Clad siphoned blood from your your flesh! It dealt " + eattack3 + " damage!");
+						System.out.println("Zombie Zak siphoned blood from your your flesh! It dealt " + eattack3 + " damage!");
 						playerhealth = playerhealth - eattack3;
-						System.out.println("You have " + playerhealth + " health and Clad has " + zombiehealth + " health!");
+						System.out.println("You have " + playerhealth + " health and Zombie Zak has " + zombiehealth + " health!");
 						System.out.println("");
 					}
 					if (zombiehealth <= 0) {
@@ -261,21 +261,21 @@ public class Gatewood {
 					if (choice == 1) {
 						System.out.println("You have attacked the enemy with your weapon, it dealt " + attack1 + " damage!");
 						cyborghealth = cyborghealth - attack1;
-						System.out.println("You have " + playerhealth + " health and Clad has " + cyborghealth + "!");
+						System.out.println("You have " + playerhealth + " health and Cyborg Clad has " + cyborghealth + "!");
 						System.out.println("");
 					}
 
 					if (choice == 2) {
 						System.out.println("You have attacked the enemy with your weapon, it dealt " + attack2 + " damage!");
 						cyborghealth = cyborghealth - attack2;
-						System.out.println("You have " + playerhealth + " health and Clad has " + cyborghealth + "!");
+						System.out.println("You have " + playerhealth + " health and Cyborg Clad has " + cyborghealth + "!");
 						System.out.println("");
 					}
 
 					if (choice == 3) {
 						System.out.println("You have attacked the enemy with your weapon, it dealt " + attack3 + " damage!");
 						cyborghealth = cyborghealth - attack3;
-						System.out.println("You have " + playerhealth + " health and Clad has " + cyborghealth + "!");
+						System.out.println("You have " + playerhealth + " health and Cyborg Clad has " + cyborghealth + "!");
 						System.out.println("");
 					}
 				}
@@ -285,27 +285,27 @@ public class Gatewood {
 
 					if (cyborgattk == 1) {
 						eattack1 = (int) (Math.random() * 100)+1;
-						System.out.println("Clad dashed towards you and slashed you! You have been dealt " + eattack1 + " damage!");
+						System.out.println("Cyborg Clad dashed towards you and slashed you! You have been dealt " + eattack1 + " damage!");
 						playerhealth = playerhealth - eattack1;
-						System.out.println("You have " + playerhealth + " health and Clad has " + cyborghealth + " health!");
+						System.out.println("You have " + playerhealth + " health and Cyborg Clad has " + cyborghealth + " health!");
 						System.out.println("");
 
 					}
 
 					if (cyborgattk == 2) {
 						eattack2 = (int) (Math.random() * 100)+1;
-						System.out.println("Clad shattered the floor under your feet! You were dealt " + eattack2 + " damage!");
+						System.out.println("Cyborg Clad shattered the floor under your feet! You were dealt " + eattack2 + " damage!");
 						playerhealth = playerhealth - eattack2;
-						System.out.println("You have " + playerhealth + " health and Clad has " + cyborghealth + " health!");
+						System.out.println("You have " + playerhealth + " health and Cyborg Clad has " + cyborghealth + " health!");
 						System.out.println("");
 
 					}
 
 					if (cyborgattk == 3) {
 						eattack3 = (int) (Math.random() * 100)+1;
-						System.out.println("Clad siphoned blood from your your flesh! It dealt " + eattack3 + " damage!");
+						System.out.println("Cyborg Clad siphoned blood from your your flesh! It dealt " + eattack3 + " damage!");
 						playerhealth = playerhealth - eattack3;
-						System.out.println("You have " + playerhealth + " health and Clad has " + cyborghealth + " health!");
+						System.out.println("You have " + playerhealth + " health and Cyborg Clad has " + cyborghealth + " health!");
 						System.out.println("");
 					}
 					if (cyborghealth <= 0) {
@@ -327,21 +327,21 @@ public class Gatewood {
 					if (choice == 1) {
 						System.out.println("You have attacked the enemy with your weapon, it dealt " + attack1 + " damage!");
 						voidhealth = voidhealth - attack1;
-						System.out.println("You have " + playerhealth + " health and Clad has " + voidhealth + "!");
+						System.out.println("You have " + playerhealth + " health and Void Vix has " + voidhealth + "!");
 						System.out.println("");
 					}
 
 					if (choice == 2) {
 						System.out.println("You have attacked the enemy with your weapon, it dealt " + attack2 + " damage!");
 						voidhealth = voidhealth - attack2;
-						System.out.println("You have " + playerhealth + " health and Clad has " + voidhealth + "!");
+						System.out.println("You have " + playerhealth + " health and Void Vixhas " + voidhealth + "!");
 						System.out.println("");
 					}
 
 					if (choice == 3) {
 						System.out.println("You have attacked the enemy with your weapon, it dealt " + attack3 + " damage!");
 						voidhealth = voidhealth - attack3;
-						System.out.println("You have " + playerhealth + " health and Clad has " + voidhealth + "!");
+						System.out.println("You have " + playerhealth + " health and Void Vix has " + voidhealth + "!");
 						System.out.println("");
 					}
 				}
@@ -351,27 +351,27 @@ public class Gatewood {
 
 					if (voidattk == 1) {
 						eattack1 = (int) (Math.random() * 100)+1;
-						System.out.println("Clad dashed towards you and slashed you! You have been dealt " + eattack1 + " damage!");
+						System.out.println("Void Vix dashed towards you and slashed you! You have been dealt " + eattack1 + " damage!");
 						playerhealth = playerhealth - eattack1;
-						System.out.println("You have " + playerhealth + " health and Clad has " + voidhealth + " health!");
+						System.out.println("You have " + playerhealth + " health and Void Vix has " + voidhealth + " health!");
 						System.out.println("");
 
 					}
 
 					if (voidattk == 2) {
 						eattack2 = (int) (Math.random() * 100)+1;
-						System.out.println("Clad shattered the floor under your feet! You were dealt " + eattack2 + " damage!");
+						System.out.println("Void Vix shattered the floor under your feet! You were dealt " + eattack2 + " damage!");
 						playerhealth = playerhealth - eattack2;
-						System.out.println("You have " + playerhealth + " health and Clad has " + voidhealth + " health!");
+						System.out.println("You have " + playerhealth + " health and Void Vix has " + voidhealth + " health!");
 						System.out.println("");
 
 					}
 
 					if (voidattk == 3) {
 						eattack3 = (int) (Math.random() * 100)+1;
-						System.out.println("Clad siphoned blood from your your flesh! It dealt " + eattack3 + " damage!");
+						System.out.println("Void Vix siphoned blood from your your flesh! It dealt " + eattack3 + " damage!");
 						playerhealth = playerhealth - eattack3;
-						System.out.println("You have " + playerhealth + " health and Clad has " + voidhealth + " health!");
+						System.out.println("You have " + playerhealth + " health and Void Vix has " + voidhealth + " health!");
 						System.out.println("");
 					}
 					if (voidhealth <= 0) {
@@ -381,3 +381,5 @@ public class Gatewood {
 		}
 	}
 }
+
+
