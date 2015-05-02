@@ -174,76 +174,11 @@ public class Gatewood {
 					playerhealth = playerhealth - eattack3;
 					System.out.println("You have " + playerhealth + " health and Clad has " + demonhealth + " health!");
 					System.out.println("");
-
-				}
+				if (demonhealth > 0) break; {
+					}
 				if (playerhealth > 0) {
 				}
 				while (zombiehealth > 0) {
-				}
-				System.out.println("Time for your move!!");
-				System.out.println("");
-				System.out.println("Your skills:");
-				System.out.println("");
-
-				System.out.println(attack1name);
-				System.out.println(attack2name);
-				System.out.println(attack3name);
-				System.out.println("");
-				System.out.println("What skill do you use? ");
-				System.out.println("");
-				int choice = input.nextInt();
-				if (choice == 1) {
-					System.out.println("You have attacked the enemy with your weapon, it dealt " + attack1 + " damage!");
-					demonhealth = demonhealth - attack1;
-					System.out.println("You have " + playerhealth + " health and Clad has " + demonhealth + "!");
-					System.out.println("");
-				}
-
-				if (choice == 2) {
-					System.out.println("You have attacked the enemy with your weapon, it dealt " + attack2 + " damage!");
-					demonhealth = demonhealth - attack2;
-					System.out.println("You have " + playerhealth + " health and Clad has " + demonhealth + "!");
-					System.out.println("");
-				}
-
-				if (choice == 3) {
-					System.out.println("You have attacked the enemy with your weapon, it dealt " + attack3 + " damage!");
-					demonhealth = demonhealth - attack3;
-					System.out.println("You have " + playerhealth + " health and Clad has " + demonhealth + "!");
-					System.out.println("");
-				}
-			}
-			System.out.println("");
-			System.out.println("Enemy's turn!"); {
-				int demonattk = (int) (Math.random()* 3 + 1);
-
-				if (demonattk == 1) {
-					eattack1 = (int) (Math.random() * 100)+1;
-					System.out.println("Clad dashed towards you and slashed you! You have been dealt " + eattack1 + " damage!");
-					playerhealth = playerhealth - eattack1;
-					System.out.println("You have " + playerhealth + " health and Clad has " + demonhealth + " health!");
-					System.out.println("");
-
-				}
-
-				if (demonattk == 2) {
-					eattack2 = (int) (Math.random() * 100)+1;
-					System.out.println("Clad shattered the floor under your feet! You were dealt " + eattack2 + " damage!");
-					playerhealth = playerhealth - eattack2;
-					System.out.println("You have " + playerhealth + " health and Clad has " + demonhealth + " health!");
-					System.out.println("");
-
-				}
-
-				if (demonattk == 3) {
-					eattack3 = (int) (Math.random() * 100)+1;
-					System.out.println("Clad siphoned blood from your your flesh! It dealt " + eattack3 + " damage!");
-					playerhealth = playerhealth - eattack3;
-					System.out.println("You have " + playerhealth + " health and Clad has " + demonhealth + " health!");
-					System.out.println("");
-					if (playerhealth > 0) {
-					}
-					while (zombiehealth > 0) {
 					}
 					System.out.println("Time for your move!!");
 					System.out.println("");
@@ -306,140 +241,144 @@ public class Gatewood {
 						playerhealth = playerhealth - eattack3;
 						System.out.println("You have " + playerhealth + " health and Clad has " + zombiehealth + " health!");
 						System.out.println("");
+					if (zombiehealth > 0) break; {
+						}
+					if (playerhealth > 0) {
+						}
+					while (cyborghealth > 0) {
+						}
+						System.out.println("Time for your move!!");
+						System.out.println("");
+						System.out.println("Your skills:");
+						System.out.println("");
+
+						System.out.println(attack1name);
+						System.out.println(attack2name);
+						System.out.println(attack3name);
+						System.out.println("");
+						System.out.println("What skill do you use? ");
+						System.out.println("");
+						int choice = input.nextInt();
+						if (choice == 1) {
+							System.out.println("You have attacked the enemy with your weapon, it dealt " + attack1 + " damage!");
+							cyborghealth = cyborghealth - attack1;
+							System.out.println("You have " + playerhealth + " health and Clad has " + cyborghealth + "!");
+							System.out.println("");
+						}
+
+						if (choice == 2) {
+							System.out.println("You have attacked the enemy with your weapon, it dealt " + attack2 + " damage!");
+							cyborghealth = cyborghealth - attack2;
+							System.out.println("You have " + playerhealth + " health and Clad has " + cyborghealth + "!");
+							System.out.println("");
+						}
+
+						if (choice == 3) {
+							System.out.println("You have attacked the enemy with your weapon, it dealt " + attack3 + " damage!");
+							cyborghealth = cyborghealth - attack3;
+							System.out.println("You have " + playerhealth + " health and Clad has " + cyborghealth + "!");
+							System.out.println("");
+						}
+					}
+					System.out.println("");
+					System.out.println("Enemy's turn!"); {
+						int cyborgattk = (int) (Math.random()* 3 + 1);
+
+						if (cyborgattk == 1) {
+							eattack1 = (int) (Math.random() * 100)+1;
+							System.out.println("Clad dashed towards you and slashed you! You have been dealt " + eattack1 + " damage!");
+							playerhealth = playerhealth - eattack1;
+							System.out.println("You have " + playerhealth + " health and Clad has " + cyborghealth + " health!");
+							System.out.println("");
+
+						}
+
+						if (cyborgattk == 2) {
+							eattack2 = (int) (Math.random() * 100)+1;
+							System.out.println("Clad shattered the floor under your feet! You were dealt " + eattack2 + " damage!");
+							playerhealth = playerhealth - eattack2;
+							System.out.println("You have " + playerhealth + " health and Clad has " + cyborghealth + " health!");
+							System.out.println("");
+
+						}
+
+						if (cyborgattk == 3) {
+							eattack3 = (int) (Math.random() * 100)+1;
+							System.out.println("Clad siphoned blood from your your flesh! It dealt " + eattack3 + " damage!");
+							playerhealth = playerhealth - eattack3;
+							System.out.println("You have " + playerhealth + " health and Clad has " + cyborghealth + " health!");
+							System.out.println("");
+						if (cyborghealth > 0) break; {
+							}
 						if (playerhealth > 0) {
-					      }
-					      while (cyborghealth > 0) {
-					      }
-					    	  System.out.println("Time for your move!!");
-					          System.out.println("");
-					          System.out.println("Your skills:");
-					          System.out.println("");
-					          
-					          System.out.println(attack1name);
-					          System.out.println(attack2name);
-					          System.out.println(attack3name);
-					          System.out.println("");
-					          System.out.println("What skill do you use? ");
-					          System.out.println("");
-					          int choice = input.nextInt();
-					          if (choice == 1) {
-					              System.out.println("You have attacked the enemy with your weapon, it dealt " + attack1 + " damage!");
-					              cyborghealth = cyborghealth - attack1;
-					              System.out.println("You have " + playerhealth + " health and Clad has " + cyborghealth + "!");
-					              System.out.println("");
-					           }
-					     
-					           if (choice == 2) {
-					              System.out.println("You have attacked the enemy with your weapon, it dealt " + attack2 + " damage!");
-					              cyborghealth = cyborghealth - attack2;
-					              System.out.println("You have " + playerhealth + " health and Clad has " + cyborghealth + "!");
-					              System.out.println("");
-					           }
-					     
-					           if (choice == 3) {
-					              System.out.println("You have attacked the enemy with your weapon, it dealt " + attack3 + " damage!");
-					              cyborghealth = cyborghealth - attack3;
-					              System.out.println("You have " + playerhealth + " health and Clad has " + cyborghealth + "!");
-					              System.out.println("");
-					           }
-					        }
-					       System.out.println("");
-					       System.out.println("Enemy's turn!"); {
-					     	  int cyborgattk = (int) (Math.random()* 3 + 1);
-					           
-					           if (cyborgattk == 1) {
-					              eattack1 = (int) (Math.random() * 100)+1;
-					              System.out.println("Clad dashed towards you and slashed you! You have been dealt " + eattack1 + " damage!");
-					              playerhealth = playerhealth - eattack1;
-					              System.out.println("You have " + playerhealth + " health and Clad has " + cyborghealth + " health!");
-					              System.out.println("");
-					           
-					           }
-					        
-					           if (cyborgattk == 2) {
-					              eattack2 = (int) (Math.random() * 100)+1;
-					              System.out.println("Clad shattered the floor under your feet! You were dealt " + eattack2 + " damage!");
-					              playerhealth = playerhealth - eattack2;
-					              System.out.println("You have " + playerhealth + " health and Clad has " + cyborghealth + " health!");
-					              System.out.println("");
-					           
-					           }
-					        
-					           if (cyborgattk == 3) {
-					              eattack3 = (int) (Math.random() * 100)+1;
-					              System.out.println("Clad siphoned blood from your your flesh! It dealt " + eattack3 + " damage!");
-					              playerhealth = playerhealth - eattack3;
-					              System.out.println("You have " + playerhealth + " health and Clad has " + cyborghealth + " health!");
-					              System.out.println("");
-					              if (playerhealth > 0) {
-							      }
-							      while (voidhealth > 0) {
-							      }
-							    	  System.out.println("Time for your move!!");
-							          System.out.println("");
-							          System.out.println("Your skills:");
-							          System.out.println("");
-							          
-							          System.out.println(attack1name);
-							          System.out.println(attack2name);
-							          System.out.println(attack3name);
-							          System.out.println("");
-							          System.out.println("What skill do you use? ");
-							          System.out.println("");
-							          int choice = input.nextInt();
-							          if (choice == 1) {
-							              System.out.println("You have attacked the enemy with your weapon, it dealt " + attack1 + " damage!");
-							              voidhealth = voidhealth - attack1;
-							              System.out.println("You have " + playerhealth + " health and Clad has " + voidhealth + "!");
-							              System.out.println("");
-							           }
-							     
-							           if (choice == 2) {
-							              System.out.println("You have attacked the enemy with your weapon, it dealt " + attack2 + " damage!");
-							              voidhealth = voidhealth - attack2;
-							              System.out.println("You have " + playerhealth + " health and Clad has " + voidhealth + "!");
-							              System.out.println("");
-							           }
-							     
-							           if (choice == 3) {
-							              System.out.println("You have attacked the enemy with your weapon, it dealt " + attack3 + " damage!");
-							              voidhealth = voidhealth - attack3;
-							              System.out.println("You have " + playerhealth + " health and Clad has " + voidhealth + "!");
-							              System.out.println("");
-							           }
-							        }
-							       System.out.println("");
-							       System.out.println("Enemy's turn!"); {
-							     	  int voidattk = (int) (Math.random()* 3 + 1);
-							           
-							           if (voidattk == 1) {
-							              eattack1 = (int) (Math.random() * 100)+1;
-							              System.out.println("Clad dashed towards you and slashed you! You have been dealt " + eattack1 + " damage!");
-							              playerhealth = playerhealth - eattack1;
-							              System.out.println("You have " + playerhealth + " health and Clad has " + voidhealth + " health!");
-							              System.out.println("");
-							           
-							           }
-							        
-							           if (voidattk == 2) {
-							              eattack2 = (int) (Math.random() * 100)+1;
-							              System.out.println("Clad shattered the floor under your feet! You were dealt " + eattack2 + " damage!");
-							              playerhealth = playerhealth - eattack2;
-							              System.out.println("You have " + playerhealth + " health and Clad has " + voidhealth + " health!");
-							              System.out.println("");
-							           
-							           }
-							        
-							           if (voidattk == 3) {
-							              eattack3 = (int) (Math.random() * 100)+1;
-							              System.out.println("Clad siphoned blood from your your flesh! It dealt " + eattack3 + " damage!");
-							              playerhealth = playerhealth - eattack3;
-							              System.out.println("You have " + playerhealth + " health and Clad has " + voidhealth + " health!");
-							              System.out.println("");
-							              
-							           }
-							       }
-					       }
+							}
+						while (voidhealth > 0) {
+							}
+							System.out.println("Time for your move!!");
+							System.out.println("");
+							System.out.println("Your skills:");
+							System.out.println("");
+
+							System.out.println(attack1name);
+							System.out.println(attack2name);
+							System.out.println(attack3name);
+							System.out.println("");
+							System.out.println("What skill do you use? ");
+							System.out.println("");
+							int choice = input.nextInt();
+							if (choice == 1) {
+								System.out.println("You have attacked the enemy with your weapon, it dealt " + attack1 + " damage!");
+								voidhealth = voidhealth - attack1;
+								System.out.println("You have " + playerhealth + " health and Clad has " + voidhealth + "!");
+								System.out.println("");
+							}
+
+							if (choice == 2) {
+								System.out.println("You have attacked the enemy with your weapon, it dealt " + attack2 + " damage!");
+								voidhealth = voidhealth - attack2;
+								System.out.println("You have " + playerhealth + " health and Clad has " + voidhealth + "!");
+								System.out.println("");
+							}
+
+							if (choice == 3) {
+								System.out.println("You have attacked the enemy with your weapon, it dealt " + attack3 + " damage!");
+								voidhealth = voidhealth - attack3;
+								System.out.println("You have " + playerhealth + " health and Clad has " + voidhealth + "!");
+								System.out.println("");
+							}
+						}
+						System.out.println("");
+						System.out.println("Enemy's turn!"); {
+							int voidattk = (int) (Math.random()* 3 + 1);
+
+							if (voidattk == 1) {
+								eattack1 = (int) (Math.random() * 100)+1;
+								System.out.println("Clad dashed towards you and slashed you! You have been dealt " + eattack1 + " damage!");
+								playerhealth = playerhealth - eattack1;
+								System.out.println("You have " + playerhealth + " health and Clad has " + voidhealth + " health!");
+								System.out.println("");
+
+							}
+
+							if (voidattk == 2) {
+								eattack2 = (int) (Math.random() * 100)+1;
+								System.out.println("Clad shattered the floor under your feet! You were dealt " + eattack2 + " damage!");
+								playerhealth = playerhealth - eattack2;
+								System.out.println("You have " + playerhealth + " health and Clad has " + voidhealth + " health!");
+								System.out.println("");
+
+							}
+
+							if (voidattk == 3) {
+								eattack3 = (int) (Math.random() * 100)+1;
+								System.out.println("Clad siphoned blood from your your flesh! It dealt " + eattack3 + " damage!");
+								playerhealth = playerhealth - eattack3;
+								System.out.println("You have " + playerhealth + " health and Clad has " + voidhealth + " health!");
+								System.out.println("");
+
+							}
+						}
+					}
 				}
 			}
 		}
