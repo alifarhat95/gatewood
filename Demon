@@ -1,0 +1,17 @@
+
+public class Demon {
+	int demonhp;
+	int demonhate;
+	int demonscar;
+	int demonfeed;
+	
+		public void demonclass(){
+		demonhp = 500;
+		demonhate =  (int) (Math.random() * 100)+1;
+		demonscar =  (int) (Math.random() * 100)+1;
+		demonfeed =  (int) (Math.random() * 100)+1;
+		}
+		
+
+	}
+
