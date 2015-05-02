@@ -1,0 +1,17 @@
+
+public class Cyborg {
+	int cyborghp;
+	int cyborggun;
+	int cyborgpunch;
+	int cyborgkick;
+	
+		public void cyborgclass(){
+		cyborghp = 300;
+		cyborggun =  (int) (Math.random() * 100)+1;
+		cyborgpunch =  (int) (Math.random() * 100)+1;
+		cyborgkick =  (int) (Math.random() * 100)+1;
+		}
+		
+
+	}
+
