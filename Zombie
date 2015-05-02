@@ -1,0 +1,17 @@
+
+public class Zombie {
+	int zombiehp;
+	int zombiescare;
+	int zombiebite;
+	int zombiescratch;
+	
+		public void zombieclass(){
+		zombiehp = 800;
+		zombiescare =  (int) (Math.random() * 100)+1;
+		zombiebite =  (int) (Math.random() * 100)+1;
+		zombiescratch =  (int) (Math.random() * 100)+1;
+		}
+		
+
+	}
+
