@@ -80,6 +80,10 @@ public class Gatewood {
 			attack3name = decimaten;
 			System.out.println("You feel the power of the warrior class flowing inside!");
 			System.out.println("You loaded up with 1000 Health!");
+			demonhealth = enemyD.demonhp;
+			zombiehealth = enemyZ.zombiehp;
+			cyborghealth = enemyC.cyborghp;
+			voidhealth = enemyV.voidhp;
 		}
 		//load the archerhp from subclass Player
 		if (pick == 2) {
@@ -92,6 +96,10 @@ public class Gatewood {
 			attack3name = snipen;
 			System.out.println("You feel the power of the archer class flowing inside!");
 			System.out.println("You loaded up with 1200 health!");
+			demonhealth = enemyD.demonhp;
+			zombiehealth = enemyZ.zombiehp;
+			cyborghealth = enemyC.cyborghp;
+			voidhealth = enemyV.voidhp;
 		}
 		//load the magehp from subclass Player
 		if (pick == 3) {
@@ -104,13 +112,13 @@ public class Gatewood {
 			attack3name = earthn;
 			System.out.println("You feel the power of the mage class flowing inside!");
 			System.out.println("You loaded up with 900 health!");
+			demonhealth = enemyD.demonhp;
+			zombiehealth = enemyZ.zombiehp;
+			cyborghealth = enemyC.cyborghp;
+			voidhealth = enemyV.voidhp;
 		}
-		demonhealth = enemyD.demonhp;
-		zombiehealth = enemyZ.zombiehp;
-		cyborghealth = enemyC.cyborghp;
-		voidhealth = enemyV.voidhp;
 		while (demonhealth > 0) { 
-			{
+			
 
 				System.out.println("Time for your move!!");
 				System.out.println("");
@@ -145,9 +153,9 @@ public class Gatewood {
 					System.out.println("You have " + playerhealth + " health and Demon Dan has " + demonhealth + "!");
 					System.out.println("");
 				}
-			}
+			
 			System.out.println("");
-			System.out.println("Enemy's turn!"); {
+			System.out.println("Enemy's turn!"); 
 				int demonattk = (int) (Math.random()* 3 + 1);
 
 				if (demonattk == 1) {
@@ -175,9 +183,8 @@ public class Gatewood {
 					System.out.println("You have " + playerhealth + " health and Demon Dan has " + demonhealth + " health!");
 					System.out.println("");
 				}
-				if (demonhealth <= 0) {
-				}
-				while (zombiehealth > 0) {
+			}
+				while (zombiehealth > 0 ) {
 
 					System.out.println("Time for your move!!");
 					System.out.println("");
@@ -190,30 +197,30 @@ public class Gatewood {
 					System.out.println("");
 					System.out.println("What skill do you use? ");
 					System.out.println("");
-					int choice = input.nextInt();
-					if (choice == 1) {
+					int choice2 = input.nextInt();
+					if (choice2 == 1) {
 						System.out.println("You have attacked the enemy with your weapon, it dealt " + attack1 + " damage!");
 						zombiehealth = zombiehealth - attack1;
 						System.out.println("You have " + playerhealth + " health and Zombie Zak has " + zombiehealth + "!");
 						System.out.println("");
 					}
 
-					if (choice == 2) {
+					if (choice2 == 2) {
 						System.out.println("You have attacked the enemy with your weapon, it dealt " + attack2 + " damage!");
 						zombiehealth = zombiehealth - attack2;
 						System.out.println("You have " + playerhealth + " health and Zombie Zak has " + zombiehealth + "!");
 						System.out.println("");
 					}
 
-					if (choice == 3) {
+					if (choice2 == 3) {
 						System.out.println("You have attacked the enemy with your weapon, it dealt " + attack3 + " damage!");
 						zombiehealth = zombiehealth - attack3;
 						System.out.println("You have " + playerhealth + " health and Zombie Zak has " + zombiehealth + "!");
 						System.out.println("");
 					}
-				}
+				
 				System.out.println("");
-				System.out.println("Enemy's turn!"); {
+				System.out.println("Enemy's turn!"); 
 					int zombieattk = (int) (Math.random()* 3 + 1);
 
 					if (zombieattk == 1) {
@@ -241,10 +248,8 @@ public class Gatewood {
 						System.out.println("You have " + playerhealth + " health and Zombie Zak has " + zombiehealth + " health!");
 						System.out.println("");
 					}
-					if (zombiehealth <= 0) {
-					}
+				}
 					while (cyborghealth > 0) {
-					}
 
 					System.out.println("Time for your move!!");
 					System.out.println("");
@@ -257,30 +262,30 @@ public class Gatewood {
 					System.out.println("");
 					System.out.println("What skill do you use? ");
 					System.out.println("");
-					int choice = input.nextInt();
-					if (choice == 1) {
+					int choice3 = input.nextInt();
+					if (choice3 == 1) {
 						System.out.println("You have attacked the enemy with your weapon, it dealt " + attack1 + " damage!");
 						cyborghealth = cyborghealth - attack1;
 						System.out.println("You have " + playerhealth + " health and Cyborg Clad has " + cyborghealth + "!");
 						System.out.println("");
 					}
 
-					if (choice == 2) {
+					if (choice3 == 2) {
 						System.out.println("You have attacked the enemy with your weapon, it dealt " + attack2 + " damage!");
 						cyborghealth = cyborghealth - attack2;
 						System.out.println("You have " + playerhealth + " health and Cyborg Clad has " + cyborghealth + "!");
 						System.out.println("");
 					}
 
-					if (choice == 3) {
+					if (choice3 == 3) {
 						System.out.println("You have attacked the enemy with your weapon, it dealt " + attack3 + " damage!");
 						cyborghealth = cyborghealth - attack3;
 						System.out.println("You have " + playerhealth + " health and Cyborg Clad has " + cyborghealth + "!");
 						System.out.println("");
 					}
-				}
+				
 				System.out.println("");
-				System.out.println("Enemy's turn!"); {
+				System.out.println("Enemy's turn!"); 
 					int cyborgattk = (int) (Math.random()* 3 + 1);
 
 					if (cyborgattk == 1) {
@@ -308,10 +313,9 @@ public class Gatewood {
 						System.out.println("You have " + playerhealth + " health and Cyborg Clad has " + cyborghealth + " health!");
 						System.out.println("");
 					}
-					if (cyborghealth <= 0) {
-					}
+				}
 					while (voidhealth > 0) {
-					}
+					
 					System.out.println("Time for your move!!");
 					System.out.println("");
 					System.out.println("Your skills:");
@@ -323,30 +327,30 @@ public class Gatewood {
 					System.out.println("");
 					System.out.println("What skill do you use? ");
 					System.out.println("");
-					int choice = input.nextInt();
-					if (choice == 1) {
+					int choice4 = input.nextInt();
+					if (choice4 == 1) {
 						System.out.println("You have attacked the enemy with your weapon, it dealt " + attack1 + " damage!");
 						voidhealth = voidhealth - attack1;
 						System.out.println("You have " + playerhealth + " health and Void Vix has " + voidhealth + "!");
 						System.out.println("");
 					}
 
-					if (choice == 2) {
+					if (choice4 == 2) {
 						System.out.println("You have attacked the enemy with your weapon, it dealt " + attack2 + " damage!");
 						voidhealth = voidhealth - attack2;
 						System.out.println("You have " + playerhealth + " health and Void Vixhas " + voidhealth + "!");
 						System.out.println("");
 					}
 
-					if (choice == 3) {
+					if (choice4 == 3) {
 						System.out.println("You have attacked the enemy with your weapon, it dealt " + attack3 + " damage!");
 						voidhealth = voidhealth - attack3;
 						System.out.println("You have " + playerhealth + " health and Void Vix has " + voidhealth + "!");
 						System.out.println("");
 					}
-				}
+				
 				System.out.println("");
-				System.out.println("Enemy's turn!"); {
+				System.out.println("Enemy's turn!"); 
 					int voidattk = (int) (Math.random()* 3 + 1);
 
 					if (voidattk == 1) {
@@ -374,12 +378,12 @@ public class Gatewood {
 						System.out.println("You have " + playerhealth + " health and Void Vix has " + voidhealth + " health!");
 						System.out.println("");
 					}
-					if (voidhealth <= 0) {
-					}
 				}
 			}
 		}
-	}
-}
+
+	
+
+
 
 
